@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title> Main Page </title>
+	<link href="Style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="image/favicon.png">
+
+</head>
+
+<body>
+	<div id="wrap">
+		<ul class="navbar">
+			<li><a href="#Camarilla">Camarilla</a>
+				<ul>
+					<li> <a href="https://whitewolf.fandom.com/wiki/Brujah">Brujah </a></li>
+					<li> <a href="https://whitewolf.fandom.com/wiki/Gangrel_(VTM)">Gangrel </a></li>
+					<li> <a href="https://whitewolf.fandom.com/wiki/Malkavian_(VTM)">Malkavien </a></li>
+					<li> <a href="https://whitewolf.fandom.com/wiki/Nosferatu_(VTM)">Nosferatu </a></li>
+					<li> <a href="https://whitewolf.fandom.com/wiki/Toreador_(VTM)">Toreador </a></li>
+					<li> <a href="https://whitewolf.fandom.com/wiki/Tremere_(VTM)">Tremere </a></li>
+					<li> <a href="https://whitewolf.fandom.com/wiki/Ventrue_(VTM)">Ventrue </a></li>
+				</ul>
+			</li>
+			<li> <a href="#Anarchs">Anarchs</a>
+				<ul>
+					<li> <a href="#">Banu Haqim</a></li>
+					<li> <a href="#">Brujah</a></li>
+					<li> <a href="#">Gangrel</a></li>
+				</ul>
+			</li>
+			<li><a href="#Sabbat">Sabbat</a>
+				<ul>
+					<li><a href="#"></a>Lasombra</li>
+					<li><a href="#"></a>Tzimisce</li>
+				</ul>
+			</li>
+			<li><a href="#JoinUs">Nous rejoindre</a></li>
+		</ul>
+	</div>
+	<div class="wtvr">
+	<h1 id="Camarilla"> LA CAMARILLA </h1>
+	<img src="image/logo_vampire.png" alt="logo Camarilla" />
+	<ul> 
+		<li> <a href="https://whitewolf.fandom.com/wiki/Brujah">Brujah </a></li>
+		<li> <a href="https://whitewolf.fandom.com/wiki/Gangrel_(VTM)">Gangrel </a></li>
+		<li> <a href="https://whitewolf.fandom.com/wiki/Malkavian_(VTM)">Malkavien </a></li>
+		<li> <a href="https://whitewolf.fandom.com/wiki/Nosferatu_(VTM)">Nosferatu </a></li>
+		<li> <a href="https://whitewolf.fandom.com/wiki/Toreador_(VTM)">Toreador </a></li>
+		<li> <a href="https://whitewolf.fandom.com/wiki/Tremere_(VTM)">Tremere </a></li>
+		<li> <a href="https://whitewolf.fandom.com/wiki/Ventrue_(VTM)">Ventrue </a></li>
+	</ul>
+	<p> Les toréadors c'est le meilleur clan juste.... </p>
+	<img src="image/toreador.jpg" alt="Symbole toreador" />
+	<h1 id="Anarchs">LES ANARCHS</h1>
+	<img src="image/Anarch.png" alt="logo anarchs" height="300" />
+	<p>C'est un peu des petits fifou</p>
+	<ul>
+		<li>Banu Haqim</li>
+		<li>Brujah</li>
+		<li>Gangrel</li>
+	</ul>
+	<h1 id="Sabbat">LE SABBAT</h1>
+	<img src="image/SymbolSabbatV5.png" alt="logo sabbat" height="300" />
+	<p>C'est grave des méchants ils sont pas gentils</p>
+	<ul>
+		<li>Lasombra</li>
+		<li>Tzimisce</li>
+	</ul>
+
+	<h2 id="JoinUs">Inscription vampirique</h2>
+	<form class="form-inscr">
+		<label for="fname">Prénom:</label>
+		<input type="text" id="fname" value="" /><br>
+		<label for="lname">Nom de famille:</label>
+		<input type="text" id="lname" value="" /><br>
+		<label for="clan">Clan:</label>
+		<input list=ListClan id="clan" name="clan"/>
+		<datalist id="ListClan">
+			<option value="Brujah">
+			<option value="Gangrel">
+			<option value="Malkavien">
+			<option value="Nosferatu">
+			<option value="Toreador">
+			<option value="Tremere">
+			<option value="Ventrue">
+		</datalist><br>
+		<label for="secte">Secte:</label>
+		<input list=ListSecte id="secte" name="secte"/>
+		<datalist id="ListSecte">
+			<option value="Camarilla">
+			<option value="Anarchs">
+			<option value="Sabbat">
+		</datalist><br>
+		<input type="button" value="Valider"/>
+	</form>	
+</div>
+</body>
+</html>

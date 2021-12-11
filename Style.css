@@ -1,0 +1,98 @@
+﻿html{
+    scroll-behavior:smooth;
+}
+
+body{
+	background-image: url(image/Background.jpg);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+
+.wtvr{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wtvr ul li a {
+    color: #FFFFFF;
+}
+
+#wrap{
+    width:100%;
+    height: 80px;
+    position: relative;
+    z-index: 99; /*Met le menu tout en haut*/
+}
+
+.navbar{
+    width:100%;
+	height: 80px;
+	padding: 0;
+	margin: 0;
+    background-color:#696969;
+    background-image: url(image/menubg.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+	float: none;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar li{
+    float: left;
+    width: 25%;
+    font-size: medium;
+    text-align: center;
+}
+
+.navbar li ul{
+    display: none; /*Permet de cacher le menu déroulant quand la souris n'est pas dessus*/
+    height: auto;									
+    margin: 0; 
+    padding: 0; 
+    }
+
+.navbar li:hover ul{ /*Permet de créer l'effet déroulant en passant la souris sur un élément */
+    display: flex;
+    flex-direction : column;
+    }
+
+.navbar li ul li{
+    background-color: #444444;
+    }
+
+.navbar li ul li a{
+    border-left: 1px solid #444444; 
+    border-right: 1px solid #444444; 
+    border-top: 1px solid #c9d4d8; 
+    border-bottom: 1px solid #444444; 
+    }
+
+.navbar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.navbar a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+.navbar a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.form-inscr{
+	display: flex;
+	flex-flow: column;
+    width: 20%;
+}
